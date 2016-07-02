@@ -12,6 +12,7 @@
 		34A0F06B1D284E900010176F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A0F0691D284E900010176F /* Main.storyboard */; };
 		34A0F06D1D284E900010176F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34A0F06C1D284E900010176F /* Assets.xcassets */; };
 		34A0F0701D284E900010176F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A0F06E1D284E900010176F /* LaunchScreen.storyboard */; };
+		34A0F0781D2850550010176F /* TipCalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A0F0771D2850550010176F /* TipCalculatorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		34A0F06C1D284E900010176F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34A0F06F1D284E900010176F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34A0F0711D284E900010176F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34A0F0771D2850550010176F /* TipCalculatorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipCalculatorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		34A0F0641D284E900010176F /* TipCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				34A0F0771D2850550010176F /* TipCalculatorModel.swift */,
 				34A0F0651D284E900010176F /* AppDelegate.swift */,
 				34A0F0671D284E900010176F /* ViewController.swift */,
 				34A0F0691D284E900010176F /* Main.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34A0F0781D2850550010176F /* TipCalculatorModel.swift in Sources */,
 				34A0F0681D284E900010176F /* ViewController.swift in Sources */,
 				34A0F0661D284E900010176F /* AppDelegate.swift in Sources */,
 			);
