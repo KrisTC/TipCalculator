@@ -23,7 +23,7 @@ class TipCalculatorModel {
         self.taxPct = taxPct
     }
     
-    func calcTipWithTipPct(tipPct: Double) -> (tip:Double, total:Double) {
+    func calcTipWithTipPct(_ tipPct: Double) -> (tip:Double, total:Double) {
         let tip = subtotal * tipPct
         return (tip, subtotal + tip)
     }

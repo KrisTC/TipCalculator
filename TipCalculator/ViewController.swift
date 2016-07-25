@@ -35,34 +35,34 @@ class ViewController: UIViewController, UITableViewDataSource {
     func calculateResult() {
         tipCalc.total = Double((totalTextField.text! as NSString).doubleValue)
         possibleTips = tipCalc.returnPossibleTips()
-        sortedKeys = Array(possibleTips.keys).sort()
+        sortedKeys = Array(possibleTips.keys).sorted()
         tableView.reloadData()
     }
     
-    @IBAction func calculateTapped(sender : AnyObject) {
+    @IBAction func calculateTapped(_ sender : AnyObject) {
         calculateResult()
     }
 
-    @IBAction func taxPercentageChanged(sender: AnyObject) {
+    @IBAction func taxPercentageChanged(_ sender: AnyObject) {
         tipCalc.taxPct = Double(taxPctSlider.value) / 100.0
         refreshUI()
     }
     
-    @IBAction func viewTapped(sender: AnyObject) {
+    @IBAction func viewTapped(_ sender: AnyObject) {
         totalTextField.resignFirstResponder()
     }
     
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sortedKeys.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // 2
-        let cell = UITableViewCell(style: UITableViewCellStyle.Value2, reuseIdentifier: nil)
+        let cell = UITableViewCell(style: UITableViewCellStyle.value2, reuseIdentifier: nil)
         
         // 3
-        let tipPct = sortedKeys[indexPath.row]
+        let tipPct = sortedKeys[(indexPath as NSIndexPath).row]
         // 4
         let tipAmt = possibleTips[tipPct]!.tipAmt
         let total = possibleTips[tipPct]!.total

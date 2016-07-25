@@ -94,12 +94,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Kristopher Cruickshank";
 				TargetAttributes = {
 					34A0F0611D284E900010176F = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = SQ5U2DFVWE;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -261,6 +262,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kristc.TipCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -275,6 +277,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kristc.TipCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -297,6 +301,7 @@
 				34A0F0761D284E900010176F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
